@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.issues-container {
+    width: 85%;
+    margin: 40px auto;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+
+    .header {
+        background-color: #f1f1f1;
+        padding: 10px 15px;
+        display: flex;
+
+        .open-issues,
+        .closed-issues {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+
+            span {
+                margin: auto 5px;
+            }
+        }
+    }
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .pagination-btn {
+        background-color: #e67e22;
+        min-width: 32px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 1px solid grey;
+        padding: 3px 5px;
+        background-color: transparent;
+        margin: auto 4px;
+
+        &:hover {
+            border-color: transparent;
+            color: #FFF;
+            background-color: #0969da;
+        }
+        &:active{
+            background-color: #0969da;
+        }
+    }
+    #prev{
+        order: 1;
+    }
+    #next{
+        order: 4;
+    }
+    #first{
+        order: 2;
+    }
+    #last{
+        order: 3;
+    }
+}
+
+.current-page{
+    background-color: #f1f1f1;
+    width: 150px;
+    height: 35px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid grey;
+    line-height: 30px;
+    font-weight: 500;
+}
